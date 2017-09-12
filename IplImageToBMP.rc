@@ -1,0 +1,40 @@
+
+///#include "globals.h"
+#include "res.h"
+
+IDI_APPICON      ICON DISCARDABLE "img\organaizer.ico"
+
+
+// Bitmap
+//
+/// IDBM_BTN_ELLIPSE  BITMAP "img\btn_ellips.bmp"
+/////////////////////////////////////////////////////////////////////////////
+
+IDM_BASE MENU  {
+
+  POPUP "&Options" {
+    MENUITEM "&Exit", IDM_EXIT
+  }
+
+  POPUP "&Help" {
+    MENUITEM "&About...", IDM_ABOUT
+  }
+
+}
+
+
+MYACCEL ACCELERATORS   {
+
+     "X",            IDM_EXIT,               VIRTKEY, ALT, NOINVERT
+}
+
+
+STRINGTABLE 
+BEGIN
+    IDS_APPNAME             "mY fIRST gL aPP -:) "
+#ifdef UNICODE
+    IDS_APPTITLE            "CV education 2016.12.11 ver. 0.03"
+#else
+    IDS_APPTITLE            "CV education 2016.12.11 ver. 0.03"
+#endif
+END
